@@ -1,3 +1,13 @@
+/**
+
+ DO NOT MODIFY ANYTHING IN THIS FILE!!
+
+ CREATE DTO OBJECTS TO SATISFY THE JAVASCRIPT IN populateOrders()
+
+ DO NOT MODIFY ANYTHING IN THIS FILE!!
+
+ */
+
 $(function() {
     $.ajax({
         url: "http://localhost:8080/api/orders/",
@@ -18,6 +28,10 @@ $(function() {
             var order = data[i];
 
             var tr = $("<tr>");
+            /**
+             * Ensure that your DTO has the following fields.
+             * Do not modify this code!
+             */
             tr.append("<td>" + order.customerName + "</td>");
             tr.append("<td>" + order.date + "</td>");
             tr.append("<td>" + order.poNumber + "</td>");
